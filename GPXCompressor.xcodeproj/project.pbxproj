@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		BF6660EA2398FECE00C51AB6 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6660E92398FECE00C51AB6 /* Document.swift */; };
 		BF6660EC2398FECF00C51AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6660EB2398FECF00C51AB6 /* Assets.xcassets */; };
 		BF6660EF2398FECF00C51AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6660ED2398FECF00C51AB6 /* Main.storyboard */; };
+		BF6660FF239900EC00C51AB6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = BF6660FE239900EC00C51AB6 /* CoreGPX */; };
+		BFE119FE239BBE0A00820D2C /* DocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE119FD239BBE0A00820D2C /* DocumentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		BF6660EE2398FECF00C51AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF6660F02398FECF00C51AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6660F12398FECF00C51AB6 /* GPXCompressor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPXCompressor.entitlements; sourceTree = "<group>"; };
+		BFE119FD239BBE0A00820D2C /* DocumentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6660FF239900EC00C51AB6 /* CoreGPX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 				BF6660E52398FECE00C51AB6 /* AppDelegate.swift */,
 				BF6660E72398FECE00C51AB6 /* ViewController.swift */,
 				BF6660E92398FECE00C51AB6 /* Document.swift */,
+				BFE119FD239BBE0A00820D2C /* DocumentController.swift */,
 				BF6660EB2398FECF00C51AB6 /* Assets.xcassets */,
 				BF6660ED2398FECF00C51AB6 /* Main.storyboard */,
 				BF6660F02398FECF00C51AB6 /* Info.plist */,
@@ -82,6 +87,9 @@
 			dependencies = (
 			);
 			name = GPXCompressor;
+			packageProductDependencies = (
+				BF6660FE239900EC00C51AB6 /* CoreGPX */,
+			);
 			productName = GPXCompressor;
 			productReference = BF6660E22398FECE00C51AB6 /* GPXCompressor.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = BF6660D92398FECD00C51AB6;
+			packageReferences = (
+				BF6660FD239900EC00C51AB6 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+			);
 			productRefGroup = BF6660E32398FECE00C51AB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			files = (
 				BF6660E82398FECE00C51AB6 /* ViewController.swift in Sources */,
 				BF6660E62398FECE00C51AB6 /* AppDelegate.swift in Sources */,
+				BFE119FE239BBE0A00820D2C /* DocumentController.swift in Sources */,
 				BF6660EA2398FECE00C51AB6 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,11 +288,13 @@
 				CODE_SIGN_ENTITLEMENTS = GPXCompressor/GPXCompressor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3X69W4AQD6;
 				INFOPLIST_FILE = GPXCompressor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = neo.vincent.GPXCompressor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -294,11 +308,13 @@
 				CODE_SIGN_ENTITLEMENTS = GPXCompressor/GPXCompressor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3X69W4AQD6;
 				INFOPLIST_FILE = GPXCompressor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = neo.vincent.GPXCompressor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -327,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF6660FD239900EC00C51AB6 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX.git";
+			requirement = {
+				branch = enhancements/56;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF6660FE239900EC00C51AB6 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF6660FD239900EC00C51AB6 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF6660DA2398FECD00C51AB6 /* Project object */;
 }
