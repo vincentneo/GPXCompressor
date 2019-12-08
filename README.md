@@ -1,5 +1,6 @@
-# GPXCompressor
-Lossy compress your GPX files!
+<p align="center">
+  <img width=65% height=65% src="https://github.com/vincentneo/GPXCompressor/raw/master/README%20Header.png">
+</p>
 
 ## Compression Methods
 To be frank, it is not really a typical file compression, instead, some waypoints are removed throughout the GPX file,
