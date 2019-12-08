@@ -11,6 +11,13 @@ To be frank, it is not really a typical file compression, instead, some waypoint
  
 After this process, location track data is still preserved, just that its of lower fidelity, as lesser waypoints are kept.
 
+## Installation
+Just visit GPXCompressor's [releases](https://github.com/vincentneo/GPXCompressor/releases/) to get the latest release of the app!
+
+You can directly run the app, or to copy to to Applications folder, whichever way suits you.
+
+NOTE: GPXCompressor is not (yet) notarized by Apple, as I don't know how (or if it is even possible) to get it notarized when I do not have an Apple Developer membership.
+
 ## Compression Methods
 
 **Current methods include:**
