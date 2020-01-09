@@ -75,9 +75,9 @@ class ViewController: NSViewController {
 
     @IBAction func processButtonClicked(_ sender: NSButton) {
         DispatchQueue.global(qos: .userInitiated).async {
-            var compressType: GPXParser.lossyTypes = .stripDuplicates
+            var compressType: GPXCompression.lossyTypes = .stripDuplicates
             
-            var options = [GPXParser.lossyOptions]()
+            var options = [GPXCompression.lossyOptions]()
             var exit = false
             
             DispatchQueue.main.sync {
